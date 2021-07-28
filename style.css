@@ -1,4 +1,4 @@
-*{
+    *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -103,7 +103,6 @@ h3 .temp{
     backdrop-filter: blur( 3.0px );
     -webkit-backdrop-filter: blur( 3.0px );
     border-radius: 10px;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     height: 80vh;
     margin-top: 0.25rem;
     width: 50%;
@@ -309,4 +308,189 @@ textarea{
     display: inline-block;
     width: 4rem;
     font-weight: bold;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* resposive */
+/* tablet */
+@media only screen and (max-width: 768px) {
+    body {
+        height: fit-content;
+    }
+
+    .greetings{
+        display: flex;
+        justify-content: space-around;
+        padding: 0.15rem;
+        margin-bottom: 0.5rem;
+        height: 14vh;  
+    }
+
+    h1{
+        font-size:1.25rem;
+        padding: 0.2rem;
+    }
+
+
+
+    .content{
+        display: flex;
+        width: 100%;
+        padding: 0 0.25rem;
+        justify-content: space-around;
+        align-items: center;
+        height: 85vh;
+        align-self: center;
+    }
+
+
+    
+    .weather{
+        color: rgb(235, 228, 236);
+        background: rgba(14, 14, 222, 0.288);
+        box-shadow: 0 5px 10px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 0.25rem;
+        width: 25%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .weather h2, h3{
+        font-size: 1.2rem;
+        color: cyan;
+        font-weight: bold;
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+
+
+    .weather h3{
+        font-size: 1.0rem;
+        color: unset;
+    }
+
+    h3 .temp{
+        font-size: 2rem;
+        color: red;
+    }
+
+    .work{
+        background: rgba( 105, 105, 245, 0.45 );
+        box-shadow: 0 8px 18px 0 rgba( 31, 38, 135, 0.37 );
+        height: 80vh;
+        margin-top: 0.1rem;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .work .main{
+        width: 100%;
+        border-bottom: solid ;
+        height: 20%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem;
+    }
+    
+    .main label{
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color:cyan;
+    }
+    
+    .main span{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding: 0.15rem;
+    }
+
+    .ToDoApp{
+       z-index: 3;   
+    }
+
+    .ToDoApp form{
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.25rem;
+        border-bottom: none;
+    }
+    
+    form input{
+        padding: 0.2rem;
+        width: 60%;
+        margin-left: 0;
+        border-radius: 0.25rem;
+    }
+    
+    form button{
+        width: 4rem;
+        border-radius: 15px;
+        padding: 0.1rem 0.1rem;
+        margin: 0.15rem
+    }
+        
+    .List{
+        margin: 0.25rem;
+        height: fit-content;
+        padding: 0.25rem;
+        font-size: 1.0rem;
+    }
+    
+    
+    .ListItem button {
+        border: none;
+        outline: none;
+        width: 3rem;
+        height: 1.5rem;
+        color: #060c64;  
+        background-color: #3cb0fd23; 
+        margin-top: 0.25rem; 
+    }
+    
+    button i{
+        font-size: 1.0rem;
+    }
+
+    .Randoms{
+        width: 25%;
+        height: 70vh;
+        color: rgb(235, 228, 236);
+        background: rgba(14, 14, 222, 0.288);
+        box-shadow: 0 8px 15px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 0.5rem;  
+        justify-content: space-between;
+    }
+
+    .Randoms button{    
+        width: 70%;
+        padding: 0.3rem;
+    }
+ 
+    .textarea{
+
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
 }
